@@ -71,23 +71,6 @@ To automate sending emails directly through Outlook, you need to load the compan
 
 ---
 
-## 🌐 Publishing to the Google Chrome Web Store
-
-If you want to distribute the extension publicly or make it installable via a one-click Web Store link, follow these steps:
-
-1.  **Zip the Extension Folder**: 
-    Create a `.zip` archive containing the contents of the `extension` directory (ensure `manifest.json` is at the root level of the zip).
-2.  **Register a Chrome Developer Account**:
-    Go to the [Chrome Web Store Developer Console](https://chrome.google.com/webstore/devconsole) and log in. You must pay a one-time $5 developer registration fee to Google.
-3.  **Upload the Zip File**:
-    Click **New Item** in the developer console dashboard and upload your zip package.
-4.  **Fill in Listing Details**:
-    Add the description, screenshots, icon images, category, and target audience info.
-5.  **Submit for Review**:
-    Submit the extension for Google's security review. Reviews typically take between 24 hours to a few days. Once approved, it will be available publicly in the Web Store.
-
----
-
 ## 📬 Usage Workflow
 
 1.  Start the Flask server and open the web dashboard.

@@ -1025,43 +1025,24 @@
         <section class="space-y-3">
           <h3 class="text-sm font-semibold flex items-center gap-2 text-primary">
             <i data-lucide="chrome" class="w-4 h-4"></i>
-            <span>Chrome Extension Setup Guide</span>
+            <span>Chrome Extension Installation Guide</span>
           </h3>
           <p class="text-xs text-muted-foreground leading-relaxed">
             To automate email sending directly from this dashboard, you must install the helper Chrome extension included in the codebase.
           </p>
           
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-muted/30 p-4 border border-border rounded-lg">
-            <div class="space-y-2.5 text-xs">
-              <h4 class="font-medium text-foreground flex items-center gap-1.5">
-                <span class="w-5 h-5 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-[10px]">1</span>
-                <span>Load Unpacked (Developer Mode)</span>
-              </h4>
-              <ol class="list-decimal pl-5 space-y-1.5 text-muted-foreground">
-                <li>Locate the <code class="bg-muted px-1.5 py-0.5 rounded text-[10px]">extension</code> folder inside this project's directory.</li>
-                <li>Open Google Chrome and navigate to <code class="text-primary hover:underline font-mono">chrome://extensions/</code>.</li>
-                <li>Enable the <strong>Developer mode</strong> toggle switch at the top-right corner.</li>
-                <li>Click the <strong>Load unpacked</strong> button at the top-left corner.</li>
-                <li>Select the <code class="bg-muted px-1.5 py-0.5 rounded text-[10px]">extension</code> folder to load it.</li>
-              </ol>
-            </div>
-            
-            <div class="space-y-2.5 text-xs">
-              <h4 class="font-medium text-foreground flex items-center gap-1.5">
-                <span class="w-5 h-5 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-[10px]">2</span>
-                <span>Publishing to Google Web Store</span>
-              </h4>
-              <p class="text-muted-foreground leading-relaxed">
-                To publish this extension to make it public and installable via a link:
-              </p>
-              <ul class="list-disc pl-5 space-y-1 text-muted-foreground">
-                <li>Zip the contents of the <code class="bg-muted px-1.5 py-0.5 rounded text-[10px]">extension</code> folder.</li>
-                <li>Go to the <a href="https://chrome.google.com/webstore/devconsole" target="_blank" class="text-primary hover:underline font-semibold inline-flex items-center gap-0.5">Chrome Developer Console <i data-lucide="external-link" class="w-3 h-3"></i></a>.</li>
-                <li>Register a developer account (requires a one-time fee to Google).</li>
-                <li>Click <strong>New Item</strong> and upload the zip file.</li>
-                <li>Fill in product details, screenshots, store listing description, and submit for review.</li>
-              </ul>
-            </div>
+          <div class="bg-muted/30 p-4 border border-border rounded-lg space-y-3">
+            <h4 class="font-medium text-foreground flex items-center gap-1.5 text-xs">
+              <span class="w-5 h-5 flex items-center justify-center rounded-full bg-primary/10 text-primary font-bold text-[10px]">1</span>
+              <span>Load Unpacked (Developer Mode)</span>
+            </h4>
+            <ol class="list-decimal pl-5 space-y-1.5 text-xs text-muted-foreground">
+              <li>Locate the <code class="bg-muted px-1.5 py-0.5 rounded text-[10px]">extension</code> folder inside this project's directory.</li>
+              <li>Open Google Chrome and navigate to <code class="text-primary hover:underline font-mono">chrome://extensions/</code>.</li>
+              <li>Enable the <strong>Developer mode</strong> toggle switch at the top-right corner.</li>
+              <li>Click the <strong>Load unpacked</strong> button at the top-left corner.</li>
+              <li>Select the <code class="bg-muted px-1.5 py-0.5 rounded text-[10px]">extension</code> folder to load it.</li>
+            </ol>
           </div>
         </section>
 
@@ -1071,58 +1052,77 @@
         <section class="space-y-3">
           <h3 class="text-sm font-semibold flex items-center gap-2 text-primary">
             <i data-lucide="play-circle" class="w-4 h-4"></i>
-            <span>Usage Workflow</span>
+            <span>Usage Workflow Guide</span>
           </h3>
+          <p class="text-xs text-muted-foreground leading-relaxed">
+            Follow these steps to generate and dispatch your onboarding email templates:
+          </p>
           
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="border border-border p-4 rounded-lg bg-card text-xs space-y-2">
-              <div class="font-medium text-foreground flex items-center gap-1.5">
-                <span class="w-5 h-5 flex items-center justify-center rounded-full bg-primary text-white font-bold text-[10px]">1</span>
-                <span>Authenticate Outlook</span>
+          <div class="space-y-4">
+            <!-- Step 1 -->
+            <div class="flex gap-4 border border-border p-4 rounded-lg bg-card text-xs">
+              <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold">1</div>
+              <div class="space-y-1">
+                <h4 class="font-semibold text-foreground flex items-center gap-2">
+                  Verify Connection Status
+                  <span class="text-[10px] px-2 py-0.5 rounded-full border border-red-500/20 bg-red-500/10 text-red-500">Extension missing</span>
+                  <span class="text-[10px] px-2 py-0.5 rounded-full border border-emerald-500/20 bg-emerald-500/10 text-emerald-500">Connected</span>
+                </h4>
+                <p class="text-muted-foreground leading-relaxed">
+                  Look at the top-right corner status badge. If it shows **Extension missing**, verify the extension is loaded in your browser. When correctly loaded, it will show **Connected** or **Disconnected** state.
+                </p>
               </div>
-              <p class="text-muted-foreground leading-relaxed">
-                Ensure the extension is loaded, then click <strong>Connect Outlook</strong>. The app will open an Outlook tab and connect.
-              </p>
             </div>
-            
-            <div class="border border-border p-4 rounded-lg bg-card text-xs space-y-2">
-              <div class="font-medium text-foreground flex items-center gap-1.5">
-                <span class="w-5 h-5 flex items-center justify-center rounded-full bg-primary text-white font-bold text-[10px]">2</span>
-                <span>Fill Details &amp; Preview</span>
+
+            <!-- Step 2 -->
+            <div class="flex gap-4 border border-border p-4 rounded-lg bg-card text-xs">
+              <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold">2</div>
+              <div class="space-y-1">
+                <h4 class="font-semibold text-foreground">Authenticate and Bind Outlook Web</h4>
+                <p class="text-muted-foreground leading-relaxed">
+                  Click the <strong class="text-primary hover:underline">Connect Outlook</strong> button. This opens a browser tab navigating to Microsoft Outlook Web. The extension will automatically bind this page to establish a secure background communication bridge.
+                </p>
               </div>
-              <p class="text-muted-foreground leading-relaxed">
-                Choose template language, fill in the fields, and view the live rendering instantly in the Desktop or Mobile preview panel.
-              </p>
             </div>
-            
-            <div class="border border-border p-4 rounded-lg bg-card text-xs space-y-2">
-              <div class="font-medium text-foreground flex items-center gap-1.5">
-                <span class="w-5 h-5 flex items-center justify-center rounded-full bg-primary text-white font-bold text-[10px]">3</span>
-                <span>Send Automatically</span>
+
+            <!-- Step 3 -->
+            <div class="flex gap-4 border border-border p-4 rounded-lg bg-card text-xs">
+              <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold">3</div>
+              <div class="space-y-1">
+                <h4 class="font-semibold text-foreground">Fill Form Details &amp; Select Language</h4>
+                <p class="text-muted-foreground leading-relaxed">
+                  Input the recipient email and customize all customer information, Unifi connection details, and NEXTGen crew details on the left panel. Use the **Language Selection** card to switch the email between English (ENG) and Bahasa Melayu (BM).
+                </p>
               </div>
-              <p class="text-muted-foreground leading-relaxed">
-                Click <strong>Send Email via Outlook</strong>. The extension automatically opens compose, injects custom HTML, and delivers the email.
-              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex gap-4 border border-border p-4 rounded-lg bg-card text-xs">
+              <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold">4</div>
+              <div class="space-y-1">
+                <h4 class="font-semibold text-foreground flex items-center gap-2">
+                  Verify Live Responsive Preview
+                  <span class="text-[10px] px-2 py-0.5 rounded-full border border-border bg-muted text-muted-foreground flex items-center gap-1"><i data-lucide="monitor" class="w-2.5 h-2.5"></i> Desktop</span>
+                  <span class="text-[10px] px-2 py-0.5 rounded-full border border-border bg-muted text-muted-foreground flex items-center gap-1"><i data-lucide="smartphone" class="w-2.5 h-2.5"></i> Mobile</span>
+                </h4>
+                <p class="text-muted-foreground leading-relaxed">
+                  Verify columns, values, and design system formatting in real time in the right panel. Toggle **Desktop** and **Mobile** views to ensure correct height matching of the key-value sections under both layouts.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="flex gap-4 border border-border p-4 rounded-lg bg-card text-xs">
+              <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold">5</div>
+              <div class="space-y-1">
+                <h4 class="font-semibold text-foreground">Initiate Email Send</h4>
+                <p class="text-muted-foreground leading-relaxed">
+                  Click the **Send Email via Outlook** button. The extension will automatically focus on your Outlook tab, open the compose window, populate the recipient and subject fields, inject the custom HTML onboarding email, and send it.
+                </p>
+              </div>
             </div>
           </div>
         </section>
-
-        <hr class="border-border">
-
-        <!-- Section 4: Screenshot Demo -->
-        <section class="space-y-3">
-          <h3 class="text-sm font-semibold flex items-center gap-2 text-primary">
-            <i data-lucide="image" class="w-4 h-4"></i>
-            <span>Portal Demonstration</span>
-          </h3>
-          <div class="border border-border rounded-lg overflow-hidden bg-muted/20 p-2">
-            <img src="/static/preview_screenshot.png" alt="Email Blast Application Portal Preview" class="w-full h-auto rounded shadow-sm border border-border">
-            <p class="text-[10px] text-center text-muted-foreground mt-2">
-              Telekom Malaysia NextGen VIP Email Blast portal with dark mode and live mobile preview support.
-            </p>
-          </div>
-        </section>
-
       </div>
 
       <!-- Modal Footer -->
