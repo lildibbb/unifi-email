@@ -73,8 +73,11 @@ To automate sending emails directly through Outlook, you need to load the compan
 
 ## 📬 Usage Workflow
 
-1.  Start the Flask server and open the web dashboard.
-2.  Ensure your Chrome Extension is active. Click **Connect Outlook** in the header. If prompted, authenticate your Outlook Web account.
-3.  Fill in the dynamic client form fields (Name, Router, Package, Address, etc.).
-4.  Switch views between **ENG** and **BM** or **Desktop** and **Mobile** to verify alignment.
-5.  Click **Send Email via Outlook**. The extension will automatically open the Outlook compose window, insert the recipient, subject line, inject the custom HTML template, and prepare the email for dispatch.
+1.  **Start the Flask server** and open the web dashboard:
+    ![User Guide Modal Screenshot](static/user_guide_modal.png)
+2.  **Ensure your Chrome Extension is active**. Click **Connect Outlook** in the header. If prompted, authenticate your Outlook Web account.
+3.  **Fill in the dynamic client form fields** (Name, Router, Package, Address, etc.) and preview responsively in real time:
+    ![Desktop Preview Screenshot](static/desktop_preview.png)
+4.  **Switch views between ENG and BM or Desktop and Mobile** to verify alignment:
+    ![Mobile Preview Screenshot](static/mobile_preview.png)
+5.  **Click Send Email via Outlook**. The extension will automatically open the Outlook compose window, insert the recipient, subject line, inject the custom HTML template, and prepare the email for dispatch.

@@ -1099,7 +1099,7 @@
             <!-- Step 4 -->
             <div class="flex gap-4 border border-border p-4 rounded-lg bg-card text-xs">
               <div class="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold">4</div>
-              <div class="space-y-1">
+              <div class="space-y-2 flex-grow">
                 <h4 class="font-semibold text-foreground flex items-center gap-2">
                   Verify Live Responsive Preview
                   <span class="text-[10px] px-2 py-0.5 rounded-full border border-border bg-muted text-muted-foreground flex items-center gap-1"><i data-lucide="monitor" class="w-2.5 h-2.5"></i> Desktop</span>
@@ -1108,6 +1108,25 @@
                 <p class="text-muted-foreground leading-relaxed">
                   Verify columns, values, and design system formatting in real time in the right panel. Toggle **Desktop** and **Mobile** views to ensure correct height matching of the key-value sections under both layouts.
                 </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3 pt-3 border-t border-border/60">
+                  <div class="space-y-1.5">
+                    <span class="text-[10px] font-medium text-muted-foreground flex items-center gap-1">
+                      <i data-lucide="monitor" class="w-3 h-3 text-primary"></i> Desktop Layout Preview:
+                    </span>
+                    <div class="border border-border rounded-lg overflow-hidden shadow bg-muted/20">
+                      <img src="/static/desktop_preview.png" class="w-full h-auto object-cover" alt="Desktop View Guide">
+                    </div>
+                  </div>
+                  <div class="space-y-1.5">
+                    <span class="text-[10px] font-medium text-muted-foreground flex items-center gap-1">
+                      <i data-lucide="smartphone" class="w-3 h-3 text-primary"></i> Mobile Layout Preview:
+                    </span>
+                    <div class="border border-border rounded-lg overflow-hidden shadow bg-muted/20">
+                      <img src="/static/mobile_preview.png" class="w-full h-auto object-cover" alt="Mobile View Guide">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
