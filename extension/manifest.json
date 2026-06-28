@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Email Blast - Outlook Connector",
+  "version": "1.2",
+  "description": "Connects the Email Blast web app to your Outlook Web session for sending emails.",
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "https://outlook.office.com/*",
+    "https://outlook.office365.com/*",
+    "https://outlook.live.com/*",
+    "https://outlook.cloud.microsoft/*",
+    "https://login.microsoftonline.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16":  "icons/icon16.png",
+      "48":  "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Email Blast - Outlook Connector"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/*", "http://127.0.0.1/*"],
+      "js": ["bridge.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16":  "icons/icon16.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

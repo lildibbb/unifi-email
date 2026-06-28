@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "brainstorming": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/brainstorming/SKILL.md",
+      "computedHash": "0c877c8521ec97a5d55fa682d33122b811aebddd4788b92ac008efe85cd305cd"
+    },
+    "microsoft-docs": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "skillPath": "skills/microsoft-docs/SKILL.md",
+      "computedHash": "e49127ff2162330ac79bfde9e7ed1297df15be9ade09164fdebfe697153fcc36"
+    },
+    "microsoft-outlook": {
+      "source": "membranedev/application-skills",
+      "sourceType": "github",
+      "skillPath": "skills/microsoft-outlook/SKILL.md",
+      "computedHash": "c11b448e316bb23a6e0b19ce59fdf1b05eb765f0aeb7ff404dd861c5eba5440a"
+    },
+    "writing-plans": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "skillPath": "skills/writing-plans/SKILL.md",
+      "computedHash": "b73b59d43c34c3fc225bfae419c458bb216af80df25fc0c545dfa7fd2a161722"
+    }
+  }
+}

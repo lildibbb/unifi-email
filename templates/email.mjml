@@ -1,0 +1,15 @@
+<mjml>
+  <mj-head>
+    <mj-title>Hello {{customer_name}}</mj-title>
+  </mj-head>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text font-size="20px">Dear {{customer_name}},</mj-text>
+        <mj-text>{{message_body}}</mj-text>
+        <mj-text>Best regards,</mj-text>
+        <mj-text>{{sender_name}}</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

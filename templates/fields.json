@@ -1,0 +1,13 @@
+[
+  {"name": "customer_name",  "label": "Customer Full Name",        "label_bm": "Nama Penuh Pelanggan",           "type": "text",     "placeholder": "e.g. Ahmad bin Abdullah",    "required": true},
+  {"name": "customer_phone", "label": "Customer Phone Number",     "label_bm": "Nombor Telefon Pelanggan",       "type": "text",     "placeholder": "e.g. 012-3456789",          "required": false},
+  {"name": "home_office",    "label": "Location Type",             "label_bm": "Jenis Lokasi",                   "type": "select",   "options": [{"value":"home","label":"Home (ENG) / Rumah (BM)"},{"value":"office","label":"Office (ENG) / Pejabat (BM)"}], "required": false},
+  {"name": "unifi_login",    "label": "Unifi Login ID",            "label_bm": "ID Log Masuk Unifi",             "type": "text",     "placeholder": "e.g. ahmad123@unifi",        "required": false},
+  {"name": "package",        "label": "Package",                   "label_bm": "Pakej",                          "type": "text",     "placeholder": "e.g. Unifi 800Mbps",         "required": false},
+  {"name": "address",        "label": "Service Address",           "label_bm": "Alamat Perkhidmatan",            "type": "text",     "placeholder": "e.g. No. 1, Jalan ABC, KL", "required": false},
+  {"name": "connection",     "label": "Connection Quality",        "label_bm": "Kualiti Sambungan",              "type": "text",     "placeholder": "e.g. Stable / Good",         "required": false},
+  {"name": "router",         "label": "Router Model",              "label_bm": "Model Router",                   "type": "text",     "placeholder": "e.g. Huawei HG8145V5",       "required": false},
+  {"name": "internetusage",  "label": "Internet Usage",            "label_bm": "Penggunaan Internet",            "type": "text",     "placeholder": "e.g. High / 95% utilised",   "required": false},
+  {"name": "crew_name",      "label": "NEXTGen Crew Full Name",    "label_bm": "Nama Penuh NEXTGen Crew",        "type": "text",     "placeholder": "e.g. Siti binti Ahmad",      "required": true},
+  {"name": "crew_phone",     "label": "NEXTGen Crew Phone/Contact","label_bm": "Telefon / Hubungi NEXTGen Crew", "type": "text",     "placeholder": "e.g. 012-3456789",          "required": false}
+]

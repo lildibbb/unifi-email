@@ -1,0 +1,109 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 { font-size: 20px; }
+
+#status-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #666;
+}
+
+#status-mode { font-weight: 600; color: #333; }
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+section h2 { font-size: 16px; margin-bottom: 12px; }
+
+.form-group { margin-bottom: 12px; }
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-group textarea { resize: vertical; }
+
+.actions { margin-top: 16px; display: flex; gap: 10px; }
+
+button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#btn-preview { background: #e5e7eb; color: #333; }
+#btn-send { background: #0078d4; color: #fff; }
+#btn-send:disabled { background: #ccc; cursor: not-allowed; }
+#btn-login { background: #0078d4; color: #fff; }
+#btn-logout { background: #d32f2f; color: #fff; }
+
+#preview-frame {
+    width: 100%;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#preview-status {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.result {
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.result.success { background: #d4edda; color: #155724; }
+.result.error { background: #f8d7da; color: #721c24; }
